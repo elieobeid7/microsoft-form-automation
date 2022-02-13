@@ -1,3 +1,3 @@
-microsoft forms automation via Playwrite
+## Microsoft forms automation via Playwrite
 
-npx playwright codegen forms.office.com/r/xx
+`npx playwright codegen forms.office.com/r/xx`

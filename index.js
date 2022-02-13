@@ -12,7 +12,8 @@ function randomInput(max) {
 }
 
 for (let i = 0; i < number_of_answers; i++) {
-    console.log('Adding record number ' + i);
+    record = i + 1;
+    console.log('Adding record number ' + record);
     (async () => {
         const browser = await chromium.launch({headless: true});
         const context = await browser.newContext();
@@ -117,5 +118,5 @@ for (let i = 0; i < number_of_answers; i++) {
         await browser.close();
     })();
 
-    console.log('Record number ' + i + ' got added');
+    console.log('Record number ' + record + ' got added');
 }

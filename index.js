@@ -127,4 +127,5 @@ async function run() {
         console.log('All records are now added, bye!')
     }
 }
+
 run();

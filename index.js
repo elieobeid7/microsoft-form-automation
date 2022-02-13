@@ -116,8 +116,9 @@ async function automate() {
 }
 
 async function run() {
+    let counter;
     for (let i = 0; i < number_of_answers; i++) {
-        let counter = i + 1;
+        counter = i + 1;
         console.log('adding counter ' + counter + '/' + number_of_answers)
         await automate();
         console.log('Done - added counter ' + counter + '/' + number_of_answers);

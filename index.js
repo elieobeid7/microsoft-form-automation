@@ -117,10 +117,13 @@ async function automate() {
 
 async function run() {
     for (let i = 0; i < number_of_answers; i++) {
-        let Record = i + 1;
-        console.log('adding record ' + Record + '/' + number_of_answers)
+        let counter = i + 1;
+        console.log('adding counter ' + counter + '/' + number_of_answers)
         await automate();
-        console.log('Done - added record ' + Record + '/' + number_of_answers);
+        console.log('Done - added counter ' + counter + '/' + number_of_answers);
+    }
+    if (counter == number_of_answers) {
+        console.log('All records are now added, bye!')
     }
 }
 run();

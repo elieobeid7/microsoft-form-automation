@@ -1,8 +1,8 @@
 require('dotenv').config();
 const {chromium} = require('playwright');
 
-const number_of_answers = 1;
-const form_url = process.env.form_url;
+const number_of_answers = process.env.NUMBER_OF_ANSWERS;
+const form_url = process.env.FORM_URL;
 
 
 function randomInput(max) {
